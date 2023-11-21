@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ScrollToTop } from '@/components'
+// import { Header } from '@/common'
 import '../assets/styles.css'
 import './globals.css'
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <Header /> */}
         {children}
         <ScrollToTop />
       </body>
