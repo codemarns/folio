@@ -56,4 +56,12 @@ export const Hero: FC<HeroProps> = (props) => {
 const StyledHero = styled.section`
   min-height: 100vh;
   min-height: 100svh;
+
+  @media screen and (max-height: 800px) {
+    min-height: 100vh !important;
+    min-height: 100svh !important;
+  }
+  @media screen and (max-height: 734px) and (max-width: 1023px) and (orientation: landscape) {
+    height: auto;
+  }
 `;
