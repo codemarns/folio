@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { FC } from "react";
+import Image from "next/image";
 import { Title } from "@/components";
 import { Container, Section } from "@/common";
 import { aboutStyles } from "@/styles";
@@ -14,7 +14,15 @@ export const About: FC<AboutProps> = (props) => {
 
   return (
     <Section id={id} className={root.base}>
-      <img src={data.pattern} alt="pattern" className={pattern.base} />
+      {data.pattern && (
+        <Image
+          width={1920}
+          height={480}
+          alt="pattern"
+          src={data.pattern}
+          className={pattern.base}
+        />
+      )}
       <Container id={id + "_container"} size="lg" className={container.base}>
         <Title name={data.title} />
 
