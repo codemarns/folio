@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+import { Hero, Works } from "./sections";
 
 export default function Designs() {
   return (
-    <div>page</div>
-  )
+    <>
+      <Hero />
+      <Works />
+    </>
+  );
 }
