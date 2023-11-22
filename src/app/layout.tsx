@@ -1,6 +1,7 @@
 import cn from "classnames";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Header } from "@/common";
 import { ScrollToTop } from "@/components";
 import { layoutStyles } from "@/styles";
 import "../assets/styles.css";
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className={cn(lexend.variable, root.base)}>
       <body>
+        <Header />
         {children}
         <ScrollToTop />
       </body>
