@@ -13,9 +13,9 @@ export const imageStyles = {
   overlay: {
     base: "absolute inset-0 w-full h-full flex items-center justify-center bg-cover bg-center bg-no-repeat before:content-[''] before:absolute before:inset-0 before:bg-secondary/10 before:rounded-full before:backdrop-blur-md",
     corner: {
-      flat: "rounded-none",
-      "soft-edge": "rounded",
-      rounded: "rounded-full",
+      flat: "rounded-none before:rounded-none",
+      "soft-edge": "rounded before:rounded",
+      rounded: "rounded-full before:rounded-full",
     },
   },
   img: {
