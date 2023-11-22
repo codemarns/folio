@@ -88,6 +88,9 @@ const config: Config = {
         "danger-900": "#480014",
         "danger-950": "#1A0007",
       },
+      fontFamily: {
+        lexend: ["var(--font-lexend)"],
+      },
       screens: {
         xs: "425px",
         // => @media (min-width: 425px) { ... }
