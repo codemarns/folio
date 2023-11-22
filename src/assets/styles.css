@@ -242,3 +242,9 @@
 .cm-icon-whatsapp:before {
   content: "\26";
 }
+.cm-icon-moon-o:before {
+  content: "\27";
+}
+.cm-icon-sun-o:before {
+  content: "\28";
+}
