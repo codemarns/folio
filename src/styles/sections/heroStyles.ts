@@ -10,7 +10,7 @@ export const heroStyles = {
     left: {
       base: "py-8 px-0 lg:px-8 flex items-center justify-center",
       image: {
-        base: "p-8 before:content-[''] before:absolute before:inset-3 before:bg-secondary/10 before:rounded-full after:content-[''] after:animate-spin after:absolute after:inset-0 after:border-2 after:border-y-secondary/30 after:border-x-pink-500/50 after:rounded-full",
+        base: "p-8 before:content-[''] before:absolute before:inset-3 before:bg-secondary/10 before:rounded-full after:content-[''] after:animate-spin after:absolute after:inset-0 after:border-2 after:border-y-secondary/30 after:border-x-pink-500 after:rounded-full",
       },
     },
     right: {
