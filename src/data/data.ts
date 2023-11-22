@@ -11,7 +11,8 @@ export const data = {
     cta: "#contacts",
   },
   about_section: {
-    pattern: "pattern.svg",
+    pattern: "",
+    // pattern: "pattern.svg",
     title: "About Me",
     description: [
       `I am Marnien Cueba. You can call me Marns for short, and I live in Cebu, Philippines. An IT college graduate at the Center for Industrial Technology and Enterprise | CITE Technical Institute, Inc.`,

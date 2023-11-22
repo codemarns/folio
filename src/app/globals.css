@@ -8,7 +8,6 @@
 
 html {
   font-size: 16px;
-  @apply scroll-smooth font-extralight tracking-wider;
 }
 
 :root {
@@ -29,6 +28,19 @@ html {
   #hero {
     @apply !h-auto;
   }
+}
+
+/* EXPERIENCES */
+@media screen and (min-width: 640px) {
+  #experiences .ITEM > div > div::before {
+    @apply content-[''] absolute top-9 -left-10 w-4 h-4 bg-secondary rounded-full outline outline-8 outline-secondary/20 duration-300 ease-in-out transition-all;
+  }
+  #experiences .ITEM:nth-child(odd) > div > div::before {
+    @apply lg:left-auto lg:-right-10;
+  }
+}
+#experiences .ITEM:nth-child(even) > div {
+  @apply lg:col-start-2;
 }
 
 ::-webkit-scrollbar {

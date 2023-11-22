@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
+
 import { FC } from "react";
 import { Title } from "@/components";
 import { Container, Section } from "@/common";
