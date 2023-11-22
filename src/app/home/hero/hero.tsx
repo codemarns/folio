@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import styled from "styled-components";
 import { Button, Image } from "@/components";
 import { heroStyles } from "@/styles";
 import { HeroProps } from "./types";
@@ -12,7 +13,7 @@ export const Hero: FC<HeroProps> = (props) => {
   const { root, container, column } = heroStyles;
 
   return (
-    <section id="hero" className={root.base}>
+    <StyledHero id="hero" className={root.base}>
       <div id="hero-container" className={container.base}>
         <div className={column.left.base}>
           <Image
@@ -48,6 +49,11 @@ export const Hero: FC<HeroProps> = (props) => {
           </a>
         </div>
       </div>
-    </section>
+    </StyledHero>
   );
 };
+
+const StyledHero = styled.section`
+  min-height: 100vh;
+  min-height: 100svh;
+`;
