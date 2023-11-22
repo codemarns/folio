@@ -1,6 +1,6 @@
 export const buttonStyles = {
   root: {
-    base: "outline-none inline-flex items-center justify-center gap-2 transition-all",
+    base: "outline-none inline-flex items-center justify-center gap-2 font-normal transition-all",
     block: {
       base: "w-full",
     },

@@ -27,7 +27,7 @@ export const heroStyles = {
         },
         cta: {
           link: "inline-block",
-          base: "font-normal tracking-wider",
+          base: "tracking-wider",
         },
       },
     },

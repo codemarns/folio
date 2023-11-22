@@ -65,7 +65,6 @@ export const Form = () => {
           color="secondary"
           icon="paperplane"
           label="Send Message"
-          className="font-normal"
         />
       </form>
     </div>

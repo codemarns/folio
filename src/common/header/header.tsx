@@ -12,8 +12,8 @@ export const Header = () => {
         <Link href={"/"}>
           <Image alt="logo" src={"mc-logo.svg"} width={40} height={40} />
         </Link>
-        <Link href={"/works"}>
-          <Button label="View My Works" color="secondary" />
+        <Link href={"/designs"}>
+          <Button label="View Designs" color="secondary" size="sm" />
         </Link>
       </div>
     </header>
