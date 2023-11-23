@@ -87,8 +87,7 @@ export const Works = () => {
   const [filterData, setFilterData] = useState<Tag>("all");
 
   const filteredData = useMemo(() => {
-    if (filterData === "component")
-      return arr?.filter((e) => e.tag === "component");
+    if (filterData === "component") return arr?.filter((e) => e.tag === "component");
     if (filterData === "layout") return arr?.filter((e) => e.tag === "layout");
     if (filterData === "css") return arr?.filter((e) => e.tag === "css");
     return arr;
@@ -100,19 +99,34 @@ export const Works = () => {
         <Title name="Designs" />
 
         <div className="flex items-center justify-center gap-2 border-b border-secondary-900/50">
-          {tabMenu.map((menu) => (
-            <Button
-              key={menu.id}
-              label={menu.label}
-              onClick={() => setFilterData(menu.id as Tag)}
-              className={cn(
-                "!bg-transparent !text-current border-2 border-b-4 border-x-transparent border-t-transparent rounded-none",
-                filterData === menu.id
-                  ? "border-secondary"
-                  : "border-transparent"
-              )}
-            />
-          ))}
+          {tabMenu.map((menu) => {
+            const menuCount = () => {
+              switch (menu.id) {
+                case "component":
+                  return arr?.filter((e) => e.tag === "component").length;
+                case "layout":
+                  return arr?.filter((e) => e.tag === "layout").length;
+                case "css":
+                  return arr?.filter((e) => e.tag === "css").length;
+                default:
+                  return arr.length;
+              }
+            };
+
+            return (
+              <Button
+                key={menu.id}
+                label={menu.label + ` ${menuCount()}`}
+                onClick={() => setFilterData(menu.id as Tag)}
+                className={cn(
+                  "!bg-transparent !text-current border-2 border-b-4 !border-x-transparent !border-t-transparent rounded-none",
+                  filterData === menu.id
+                    ? "border-secondary"
+                    : "border-transparent hover:border-secondary"
+                )}
+              />
+            );
+          })}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,_minmax(285px,_1fr))] gap-12">
