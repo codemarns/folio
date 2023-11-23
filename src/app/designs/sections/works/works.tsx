@@ -94,12 +94,12 @@ export const Works = () => {
   }, [filterData]);
 
   return (
-    <Section id="works" className="bg-default-50">
+    <Section id="works" className="">
       <Container id="works-container">
         <Title name="Designs" />
 
         <div className="space-y-8">
-          <div className="flex items-center justify-center gap-0 xs:gap-2 sm:gap-4 border-b border-default-100/50">
+          <div className="flex items-center justify-center gap-0 xs:gap-2 sm:gap-4 border-b border-default-900">
             {tabMenu.map((menu) => {
               const menuCount = () => {
                 switch (menu.id) {
@@ -117,14 +117,13 @@ export const Works = () => {
               return (
                 <Button
                   key={menu.id}
-                  label={menu.label + ` 99`}
-                  // label={menu.label + ` ${menuCount()}`}
+                  label={menu.label + ` ${menuCount()}`}
                   onClick={() => setFilterData(menu.id as Tag)}
                   className={cn(
                     "!bg-transparent !text-current text-sm xs:text-base !px-1 border-2 border-b-4 !border-x-transparent !border-t-transparent rounded-none whitespace-nowrap",
                     filterData === menu.id
-                      ? "border-secondary !text-default"
-                      : "border-transparent !text-default-300 hover:border-secondary hover:!text-default"
+                      ? "border-secondary !text-secondary"
+                      : "border-transparent !text-default hover:border-secondary hover:!text-default"
                   )}
                 />
               );
@@ -135,18 +134,18 @@ export const Works = () => {
             {filteredData.map((item) => (
               <div
                 key={item.id}
-                className="group h-auto p-4 space-y-5 bg-white rounded-xl shadow overflow-hidden duration-300 ease-in-out transition-all"
+                className="group h-auto p-4 space-y-5 bg-secondary-700 rounded-xl shadow overflow-hidden duration-300 ease-in-out transition-all"
               >
                 <Image
                   alt="dummy"
-                  src="https://dummyimage.com/600x400/f0f2f4/8d93a1.jpg"
+                  src="https://dummyimage.com/600x400/2D1241/8d93a1.jpg"
                   thumbnail=""
                   aspectRatio="4:3"
                   corner="soft-edge"
                 />
-                <div className="min-h-[150px] w-full space-y-4 text-left text-default ">
+                <div className="min-h-[150px] w-full space-y-4 text-left text-default-50">
                   <div className="space-y-2">
-                    <span className="block leading-none text-lg font-semibold group-hover:text-secondary">
+                    <span className="block leading-none text-xl font-semibold">
                       {item.topic}
                     </span>
                     <span className="block leading-none text-sm uppercase opacity-75">
