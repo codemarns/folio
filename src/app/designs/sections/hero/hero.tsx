@@ -16,8 +16,8 @@ export const Hero = () => {
         height={40}
         className="absolute -bottom-0 right-4 sm:right-8 md:right-16 w-[100px] sm:w-[150px] md:w-[200px] duration-150 ease-in-out transition-all"
       />
-      <Container id={id + "_container"} className="relative">
-        <p className="text-xl text-default-50">
+      <Container id={id + "_container"} size="lg" className="relative">
+        <p className="px-4 sm:px-8 text-lg sm:text-xl text-default-50 leading-relaxed">
           {`
           Welcome to my page, your ultimate destination for mastering the art
           of frontend development! In the ever-evolving digital landscape,

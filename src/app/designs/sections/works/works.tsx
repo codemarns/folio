@@ -130,7 +130,7 @@ export const Works = () => {
             })}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-8 duration-300 ease-in-out transition-all">
             {filteredData.map((item) => (
               <div
                 key={item.id}
