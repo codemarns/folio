@@ -1,6 +1,6 @@
 export const aboutStyles = {
   root: {
-    base: "relative bg-default-950",
+    base: "relative",
   },
   pattern: {
     base: "absolute inset-0 w-full h-full object-cover",

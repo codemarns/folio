@@ -1,6 +1,6 @@
 export const experiencesStyles = {
   root: {
-    base: "!pb-0 bg-default-950",
+    base: "!pb-0",
   },
   content: {
     base: "relative pb-20 pt-8",

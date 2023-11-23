@@ -1,6 +1,6 @@
 export const contactsStyles = {
   root: {
-    base: "bg-gradient-to-b from-secondary-900/50 to-default-950",
+    base: "bg-gradient-to-b from-secondary-900/50 to-transparent",
   },
   content: {
     base: "grid grid-cols-1 lg:grid-cols-[1fr,_450px] gap-12",
