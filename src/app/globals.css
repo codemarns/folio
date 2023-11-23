@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply box-border p-0 m-0;
+  @apply box-border p-0 m-0 select-none;
 }
 
 html {

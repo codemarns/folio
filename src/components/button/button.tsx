@@ -8,6 +8,7 @@ import { Icon } from "../icon/icon";
 
 type TButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
   icon?: string;
+  iconPosition?: "left" | "right";
   label?: string;
   loading?: boolean;
   disabled?: boolean;
@@ -32,6 +33,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
     color = "secondary",
     variant = "solid",
     corner = "soft-edge",
+    iconPosition = "left",
     disabled = false,
     loading = false,
     ...restProps
@@ -64,7 +66,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
       aria-disabled={disabled || loading}
       aria-label={label}
     >
-      {icon && (
+      {icon && iconPosition === "left" && (
         <Icon
           name={loading ? "spinner" : icon}
           color={variant === "solid" ? "white" : color}
@@ -72,6 +74,13 @@ export const Button: React.FC<TButtonProps> = (props) => {
         />
       )}
       {loading ? "Loading..." : label || children}
+      {icon && iconPosition === "right" && (
+        <Icon
+          name={loading ? "spinner" : icon}
+          color={variant === "solid" ? "white" : color}
+          className={cn({ [root.icon.base]: loading })}
+        />
+      )}
     </button>
   );
 };

@@ -1,18 +1,32 @@
-import { Container, Section } from "@/common";
 import React from "react";
+import Image from "next/image";
+import { Container, Section } from "@/common";
 
 export const Hero = () => {
   const id = "hero";
   return (
     <Section
       id={id}
-      className="min-h-[500px] flex items-center justify-center bg-secondary-900"
+      className="relative min-h-[500px] flex items-center justify-center bg-secondary-700"
     >
-      <Container id={id + "_container"}>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sit
-        quidem perferendis magnam illo, dolor delectus assumenda facere
-        exercitationem earum recusandae libero asperiores quod possimus!
-        Consequatur quas sequi corrupti vel.
+      <Image
+        alt="logo"
+        src={"mc-logo.svg"}
+        width={40}
+        height={40}
+        className="absolute -bottom-0 right-4 sm:right-8 md:right-16 w-[100px] sm:w-[150px] md:w-[200px] duration-150 ease-in-out transition-all"
+      />
+      <Container id={id + "_container"} className="relative">
+        <p className="text-xl text-default-50">
+          {`
+          Welcome to my page, your ultimate destination for mastering the art
+          of frontend development! In the ever-evolving digital landscape,
+          creating compelling, user-friendly, and visually appealing web
+          interfaces is essential. Whether you're a seasoned developer looking
+          to enhance your skills or a newcomer eager to embark on an exciting
+          coding journey, our platform is designed to empower and inspire you.
+          `}
+        </p>
       </Container>
     </Section>
   );
