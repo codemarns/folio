@@ -29,7 +29,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
     size = "md",
     layout = "auto",
     type = "button",
-    color = "primary",
+    color = "secondary",
     variant = "solid",
     corner = "soft-edge",
     disabled = false,
