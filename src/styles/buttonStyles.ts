@@ -16,7 +16,7 @@ export const buttonStyles = {
     },
     corners: {
       flat: "rounded-none",
-      "soft-edge": "rounded-md",
+      "soft-edge": "rounded",
       rounded: "rounded-full",
     },
     // NOTE: IF NO LABEL OR CHILDREN
