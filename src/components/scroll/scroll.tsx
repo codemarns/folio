@@ -36,7 +36,7 @@ export const ScrollToTop = () => {
       corner="rounded"
       color="secondary"
       className={cn(
-        "animate-bounce fixed right-4 z-10 duration-300 ease-in-out transition-all",
+        "animate-bounce fixed right-4 z-10 shadow-xl duration-300 ease-in-out transition-all",
         position
       )}
       onClick={scrollToTop}
