@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <Section
       id={id}
-      className="relative min-h-[500px] flex items-center justify-center bg-secondary-900"
+      className="relative min-h-[500px] flex items-center justify-center bg-[#221929]"
     >
       <Image
         alt="logo"

@@ -134,11 +134,11 @@ export const Works = () => {
             {filteredData.map((item) => (
               <div
                 key={item.id}
-                className="group h-auto p-4 space-y-5 bg-secondary-900 rounded-xl shadow overflow-hidden duration-300 ease-in-out transition-all"
+                className="group h-auto p-5 space-y-5 bg-[#221929] rounded-xl shadow overflow-hidden duration-300 ease-in-out transition-all"
               >
                 <Image
                   alt="dummy"
-                  src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   // src="https://dummyimage.com/600x400/0B0C0F/8d93a1.jpg"
                   thumbnail=""
                   aspectRatio="4:3"
