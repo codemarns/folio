@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import cn from "classnames";
 import styled from "styled-components";
 import React, { useMemo, useState } from "react";
-import { Button, Image, Title } from "@/components";
+import { Button, Image as LocalImage, Title } from "@/components";
 import { Container, Section } from "@/common";
 
 type Tag = "all" | "layout" | "component" | "css";
@@ -150,7 +151,7 @@ export const Works = () => {
                 key={item.id}
                 className="group relative h-auto bg-[#26212b] border border-[#26212b] rounded-2xl shadow overflow-hidden duration-300 ease-in-out transition-all"
               >
-                <Image
+                <LocalImage
                   alt={item.alt}
                   src={item.img}
                   thumbnail="https://dummyimage.com/600x400/0B0C0F/8d93a1.jpg"
@@ -158,8 +159,15 @@ export const Works = () => {
                   corner="flat"
                   className="saturate-50 brightness-50 group-hover:saturate-100 group-hover:brightness-100 duration-300 ease-in-out transition-all"
                 />
-                <div className="min-h-[150px] w-full p-5 space-y-4 text-left text-default-50">
-                  <div className="space-y-2">
+                <div className="relative min-h-[150px] w-full p-5 space-y-4 text-left text-default-50">
+                  <Image
+                    alt="logo"
+                    src={"mc-logo.svg"}
+                    width={20}
+                    height={20}
+                    className="absolute -top-8 right-5 opacity-50"
+                  />
+                  <div className="!mt-0 space-y-2">
                     <span className="block leading-none text-xl font-semibold group-hover:text-secondary duration-300 ease-in-out transition-all">
                       {item.topic}
                     </span>
