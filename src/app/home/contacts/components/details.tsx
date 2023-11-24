@@ -1,52 +1,29 @@
 "use client";
 
+import { FC } from "react";
 import { Icon } from "@/components";
 import { contactsStyles } from "@/styles";
+import { DetailProps } from "../types";
 
-const data = [
-  {
-    id: "phone",
-    icon: "phone",
-    label: "+63 922 422 6708",
-  },
-  {
-    id: "whatsapp",
-    icon: "whatsapp",
-    label: "+63 922 422 6708",
-  },
-  {
-    id: "mail",
-    icon: "mail",
-    label: "marniencueba94@gmail.com",
-  },
-  {
-    id: "linkedin",
-    icon: "linkedin",
-    label: "https://www.linkedin.com/in/marnien-cueba-96a419200/",
-  },
-  {
-    id: "github",
-    icon: "github",
-    label: "https://github.com/codemarns",
-  },
-];
+type Props = {
+  data: DetailProps;
+};
 
-export const Details = () => {
+export const Details: FC<Props> = ({ data }) => {
+  const { heading, text, contacts } = data;
   const { details } = contactsStyles;
   return (
     <div className={details.base}>
       <h2 className={details.heading.base}>
-        {`Let's chat`}
+        {heading[0]}
         <br />
-        {`and discuss your project.`}
+        {heading[1]}
       </h2>
 
-      <p className={details.quote.base}>
-        We will turn your dreams into reality.
-      </p>
+      <p className={details.quote.base}>{text}</p>
 
       <ul className={details.contacts.base}>
-        {data.map((e) => (
+        {contacts.map((e) => (
           <li key={e.id} className={details.contacts.list.base}>
             <Icon
               name={e.icon}

@@ -1,21 +1,25 @@
 "use client";
 
+import { FC } from "react";
+import { Title } from "@/components";
+import { Container, Section } from "@/common";
+import { contactsStyles } from "@/styles";
 import { Form } from "./components/form";
 import { Details } from "./components/details";
-import { Container, Section } from "@/common";
-import { Title } from "@/components";
-import { contactsStyles } from "@/styles";
+import { ContactsProps } from "./types";
 
-export const Contacts = () => {
+export const Contacts: FC<ContactsProps> = (props) => {
   const id = "contacts";
+  const { data } = props;
   const { root, content } = contactsStyles;
+
   return (
     <Section id={id} className={root.base}>
       <Container id={id + "_container"}>
-        <Title name="Contacts" />
+        <Title name={data.title} />
         <div className={content.base}>
-          <Details />
-          <Form />
+          <Details data={data.details} />
+          <Form data={data.form} />
         </div>
       </Container>
     </Section>

@@ -1,11 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import cn from "classnames";
+import { FC, useState } from "react";
 import { Button } from "@/components";
 import { contactsStyles } from "@/styles";
+import { FormProps } from "../types";
 
-export const Form = () => {
+type Props = {
+  data: FormProps;
+};
+
+export const Form: FC<Props> = () => {
   const [state, setState] = useState({
     fullname: "",
     email: "",

@@ -8,7 +8,7 @@ export default function Home() {
       <About data={data.about_section} />
       <Skills data={data.skills_section} />
       <Experiences data={data.experiences_section} />
-      <Contacts />
+      <Contacts data={data.contact_section} />
     </>
   );
 }
