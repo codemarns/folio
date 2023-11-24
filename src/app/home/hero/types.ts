@@ -4,7 +4,7 @@ type Image = {
   thumbnail: string;
 };
 
-type Props = {
+type Data = {
   img: Image;
   greeting: string;
   name: string;
@@ -13,5 +13,5 @@ type Props = {
 };
 
 export type HeroProps = {
-  data: Props;
+  data: Data;
 };

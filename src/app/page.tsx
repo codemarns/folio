@@ -1,5 +1,5 @@
 import { About, Contacts, Experiences, Hero, Skills } from "./home";
-import { data } from "@/data/data";
+import { home_data as data } from "@/data";
 
 export default function Home() {
   return (
