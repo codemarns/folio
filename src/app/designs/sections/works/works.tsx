@@ -141,7 +141,7 @@ export const Works = () => {
             {filteredData.map((item) => (
               <StyledCard
                 key={item.id}
-                className="group relative h-auto p-5 space-y-5 bg-[#211a27] rounded-2xl shadow overflow-hidden duration-300 ease-in-out transition-all"
+                className="group relative h-auto p-5 space-y-5 bg-[#26212b] rounded-2xl shadow overflow-hidden duration-300 ease-in-out transition-all"
               >
                 <Image
                   alt="dummy"
