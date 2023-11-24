@@ -1,4 +1,4 @@
-export const data = {
+export const home_data = {
   hero_section: {
     img: {
       alt: "marnien cueba profile",
