@@ -1,12 +1,13 @@
 import React from "react";
-import { Hero, Works } from "./sections";
+import { Hero, Designs as Design } from "./sections";
+import { designs_data as data } from "@/data";
 
 export default function Designs() {
   return (
     <>
       <div className="h-16 w-full" />
-      <Hero />
-      <Works />
+      <Hero data={data.hero_section} />
+      <Design data={data.designs_section} />
     </>
   );
 }

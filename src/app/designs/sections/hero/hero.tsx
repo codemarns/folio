@@ -1,32 +1,24 @@
-import React from "react";
 import Image from "next/image";
+import React, { FC } from "react";
 import { Container, Section } from "@/common";
+import { designsHeroStyles } from "@/styles";
+import { HeroProps } from "./types";
 
-export const Hero = () => {
+export const Hero: FC<HeroProps> = ({ data }) => {
   const id = "hero";
+  const { root, img, description } = designsHeroStyles;
+
   return (
-    <Section
-      id={id}
-      className="relative min-h-[500px] flex items-center justify-center bg-[#26212b]" // #302d33
-    >
+    <Section id={id} className={root.base}>
       <Image
-        alt="logo"
-        src={"mc-logo.svg"}
         width={40}
         height={40}
-        className="absolute -bottom-0 right-4 sm:right-8 md:right-16 w-[100px] sm:w-[150px] md:w-[200px] opacity-10 duration-150 ease-in-out transition-all"
+        alt={data.img.alt}
+        src={data.img.url}
+        className={img.base}
       />
-      <Container id={id + "_container"} size="lg" className="relative">
-        <p className="px-4 sm:px-8 text-lg sm:text-xl leading-relaxed">
-          {`
-          Welcome to my page, your ultimate destination for mastering the art
-          of frontend development! In the ever-evolving digital landscape,
-          creating compelling, user-friendly, and visually appealing web
-          interfaces is essential. Whether you're a seasoned developer looking
-          to enhance your skills or a newcomer eager to embark on an exciting
-          coding journey, our platform is designed to empower and inspire you.
-          `}
-        </p>
+      <Container id={id + "_container"} size="lg">
+        <p className={description.base}>{data.description}</p>
       </Container>
     </Section>
   );

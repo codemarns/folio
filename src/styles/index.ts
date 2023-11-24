@@ -17,3 +17,4 @@ export { experiencesStyles } from "./pages/home/experiencesStyles";
 export { contactsStyles } from "./pages/home/contactsStyles";
 
 // DESIGNS
+export { heroStyles as designsHeroStyles } from "./pages/designs/heroStyles";
