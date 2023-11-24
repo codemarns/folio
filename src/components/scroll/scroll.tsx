@@ -6,7 +6,7 @@ import { Button } from "../button/button";
 
 export const ScrollToTop = () => {
   const [scroll, setScroll] = useState(false);
-  const [position, setPosition] = useState("bottom-4");
+  const [position, setPosition] = useState("-bottom-20");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -15,7 +15,7 @@ export const ScrollToTop = () => {
         setPosition("bottom-4");
       } else {
         setScroll(false);
-        setPosition("-bottom-4");
+        setPosition("-bottom-20");
       }
     });
   }, []);
@@ -27,7 +27,7 @@ export const ScrollToTop = () => {
     });
   };
 
-  if (!scroll) return null;
+  // if (!scroll) return null;
 
   return (
     <Button
@@ -36,7 +36,7 @@ export const ScrollToTop = () => {
       corner="rounded"
       color="secondary"
       className={cn(
-        "animate-bounce fixed right-4 z-10 shadow-xl duration-300 ease-in-out transition-all",
+        "animate-bounce !fixed right-4 z-10 shadow-xl duration-300 ease-in-out transition-all",
         position
       )}
       onClick={scrollToTop}

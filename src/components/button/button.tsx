@@ -10,6 +10,7 @@ type TButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
   icon?: string;
   iconPosition?: "left" | "right";
   label?: string;
+  badge?: string | number;
   loading?: boolean;
   disabled?: boolean;
   layout?: "auto" | "block";
@@ -25,6 +26,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
     className,
     icon,
     label,
+    badge,
     children,
     id = "button",
     size = "md",
@@ -81,6 +83,7 @@ export const Button: React.FC<TButtonProps> = (props) => {
           className={cn({ [root.icon.base]: loading })}
         />
       )}
+      {badge && <span className={root.badge.base}>{badge}</span>}
     </button>
   );
 };

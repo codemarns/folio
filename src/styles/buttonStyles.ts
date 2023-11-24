@@ -1,6 +1,6 @@
 export const buttonStyles = {
   root: {
-    base: "outline-none inline-flex items-center justify-center gap-2 font-normal transition-all",
+    base: "outline-none relative inline-flex items-center justify-center gap-2 font-normal transition-all",
     block: {
       base: "w-full",
     },
@@ -175,6 +175,9 @@ export const buttonStyles = {
     },
     icon: {
       base: "animate-spin",
+    },
+    badge: {
+      base: "absolute sm:static -top-1.5 -right-1.5 w-auto h-4 px-1.5 inline-flex items-center justify-center rounded-full bg-secondary-600 text-white text-xs font-extralight leading-none",
     },
   },
 };
