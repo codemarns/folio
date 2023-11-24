@@ -18,3 +18,4 @@ export { contactsStyles } from "./pages/home/contactsStyles";
 
 // DESIGNS
 export { heroStyles as designsHeroStyles } from "./pages/designs/heroStyles";
+export { designsStyles } from "./pages/designs/designsStyles";

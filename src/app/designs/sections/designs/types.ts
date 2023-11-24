@@ -6,7 +6,7 @@ type ImageProps = {
   thumbnail?: string;
 };
 
-type DesignProps = {
+export type DesignProps = {
   id: string;
   topic: string;
   tag: string;
