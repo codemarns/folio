@@ -2,6 +2,8 @@ import cn from "classnames";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header } from "@/common";
+import { Contacts } from "./home";
+import { contact_data } from "@/data";
 import { ScrollToTop } from "@/components";
 import { layoutStyles } from "@/styles";
 import "../assets/styles.css";
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: Props) {
       <body>
         <Header />
         {children}
+        <Contacts data={contact_data} />
         <ScrollToTop />
       </body>
     </html>
