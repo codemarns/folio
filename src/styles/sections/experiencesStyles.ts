@@ -7,7 +7,7 @@ export const experiencesStyles = {
   },
   trophy: {
     rope: {
-      base: "absolute left-1/2 sm:left-8 lg:left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#1c0f28] duration-300 ease-in-out transition-all",
+      base: "absolute left-1/2 sm:left-8 lg:left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#26212b] duration-300 ease-in-out transition-all",
     },
     circle: {
       base: "absolute -left-[calc(2rem-2px)] -top-1 w-16 h-16 flex items-center justify-center rounded-full bg-secondary outline outline-[1rem] outline-secondary/10",
@@ -28,22 +28,22 @@ export const experiencesStyles = {
       base: "py-0 sm:py-8 pl-0 sm:pl-16 lg:pl-8 pr-0 sm:pr-8 duration-300 ease-in-out transition-all",
     },
     container: {
-      base: "relative h-full p-6 sm:p-8 grid grid-cols-1 gap-5 text-left bg-[#1c0f28] rounded-xl shadow-lg",
+      base: "relative h-full p-6 sm:p-8 grid grid-cols-1 gap-5 text-left bg-[#26212b] rounded-xl shadow-lg",
     },
     info: {
       base: "grid grid-cols-1 gap-2",
       daterange: {
-        base: "text-default-400 text-sm",
+        base: "opacity-70 text-sm",
       },
       company: {
         base: "text-lg font-bold text-secondary leading-tight",
       },
       position: {
-        base: "text-lg leading-tight text-secondary-600",
+        base: "text-lg leading-tight text-secondary",
       },
     },
     award: {
-      base: "flex items-center justify-center gap-3 px-6 sm:px-8 py-2 -mx-6 sm:-mx-8 bg-gradient-to-r from-transparent via-secondary-900 to-transparent",
+      base: "flex items-center justify-center gap-3 px-6 sm:px-8 py-2 -mx-6 sm:-mx-8 bg-gradient-to-r from-transparent via-secondary-800 to-transparent",
       icon: {
         base: "text-xl text-pink-500",
       },

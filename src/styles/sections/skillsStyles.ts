@@ -1,6 +1,6 @@
 export const skillsStyles = {
   root: {
-    base: "bg-secondary-900/50",
+    base: "bg-[#26212b]",
   },
   content: {
     skills: {

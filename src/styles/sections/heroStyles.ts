@@ -1,7 +1,7 @@
 export const heroStyles = {
   root: {
     // min-h-screen 
-    base: "lg:!min-h-[800px] w-full px-8 py-16 lg:py-20 flex items-center justify-center bg-gradient-to-b from-transparent from-30% to-secondary-900/50",
+    base: "lg:!min-h-[800px] w-full px-8 py-16 lg:py-20 flex items-center justify-center bg-gradient-to-b from-transparent from-30% to-[#26212b]",
   },
   container: {
     base: "h-fit w-full max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-[400px,_1fr] min-[1160px]:grid-cols-[500px,_1fr] xl:grid-cols-2 gap-0 items-center duration-300 ease-out transition-all",

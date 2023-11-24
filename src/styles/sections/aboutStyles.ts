@@ -10,6 +10,6 @@ export const aboutStyles = {
   },
   description: {
     wrapper: "space-y-4",
-    base: "text-default-300",
+    base: "",
   },
 };

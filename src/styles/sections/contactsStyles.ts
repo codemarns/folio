@@ -1,6 +1,6 @@
 export const contactsStyles = {
   root: {
-    base: "bg-gradient-to-b from-secondary-900/50 to-transparent",
+    base: "bg-gradient-to-b from-[#26212b] to-transparent",
   },
   content: {
     base: "grid grid-cols-1 lg:grid-cols-[1fr,_450px] gap-12",
@@ -24,7 +24,7 @@ export const contactsStyles = {
   },
   form: {
     wrapper: "",
-    base: "grid grid-cols-1 gap-8 px-4 xs:px-8 py-12 bg-secondary-900/50 rounded-xl shadow-xl",
+    base: "grid grid-cols-1 gap-8 px-4 xs:px-8 py-12 bg-[#26212b] rounded-xl shadow-xl",
     heading: {
       base: "text-2xl font-normal",
     },
