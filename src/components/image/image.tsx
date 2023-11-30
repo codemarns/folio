@@ -3,12 +3,12 @@ import React, { useMemo } from "react";
 import cn from "classnames";
 import { imageStyles } from "@/styles";
 
-type ImageProps = React.HTMLAttributes<HTMLImageElement> & {
+export type ImageProps = React.HTMLAttributes<HTMLImageElement> & {
   alt: string;
   src: string;
   thumbnail: string;
   width?: string;
-  aspectRatio?: "16:9" | "8:5" | "4:3" | "3:2" | "1:1";
+  aspectRatio?: "3.20:1" | "16:9" | "8:5" | "4:3" | "3:2" | "1:1";
   corner?: "flat" | "soft-edge" | "rounded";
 };
 
@@ -27,6 +27,8 @@ export const Image: React.FC<ImageProps> = (props) => {
 
   const switchAspectRatio = useMemo(() => {
     switch (aspectRatio) {
+      case "3.20:1":
+        return "46.875%";
       case "16:9":
         return "56.25%";
       case "8:5":
