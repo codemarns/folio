@@ -11,6 +11,7 @@ export type DesignProps = {
   topic: string;
   tag: string;
   img: ImageProps;
+  floating_img?: ImageProps;
   description: string;
 };
 

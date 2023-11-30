@@ -8,7 +8,7 @@ import { DesignProps } from "@/app/designs/sections/designs/types";
 import { cardStyles } from "@/styles";
 
 export const Card: FC<DesignProps> = (props) => {
-  const { id, img, topic, description, tag } = props;
+  const { id, img, floating_img, topic, tag, description } = props;
 
   const { root } = cardStyles;
 
