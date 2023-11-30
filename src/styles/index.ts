@@ -1,5 +1,6 @@
 // COMPONENT
 export { cardStyles } from "./components/cardStyles";
+export { cardV2Styles } from "./components/cardV2Styles";
 export { buttonStyles } from "./buttonStyles";
 export { iconStyles } from "./iconStyles";
 export { imageStyles } from "./imageStyles";
