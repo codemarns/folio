@@ -2,8 +2,8 @@ export const home_data = {
   hero_section: {
     img: {
       alt: "marnien cueba profile",
-      url: "/marnien-cueba.png",
-      thumbnail: "/marnien-cueba.gif",
+      url: "marnien-cueba.png",
+      thumbnail: "marnien-cueba.gif",
     },
     greeting: "Hi, I am",
     name: "Marnien Cueba",
