@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero, Designs as Design } from "./sections";
-import { designs_data as data } from "@/data";
+import data from "@/data/designs_data.json";
 
 export default function Designs() {
   return (
