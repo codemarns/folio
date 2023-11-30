@@ -1,7 +1,8 @@
 "use client";
 
-import React, { FC } from "react";
+import Link from "next/link";
 import Image from "next/image";
+import React, { FC } from "react";
 import styled from "styled-components";
 import { Button, Image as LocalImage } from "@/components";
 import { DesignProps } from "@/app/designs/sections/designs/types";
@@ -36,13 +37,15 @@ export const Card: FC<DesignProps> = (props) => {
         </div>
 
         <p className={root.details.description.base}>{description}</p>
-        <Button
-          layout="block"
-          icon="arrow-right"
-          label="See Details"
-          iconPosition="right"
-          className={root.details.cta.base}
-        />
+        <Link href={`/designs/${id}`}>
+          <Button
+            layout="block"
+            icon="arrow-right"
+            label="See Details"
+            iconPosition="right"
+            className={root.details.cta.base}
+          />
+        </Link>
       </div>
     </StyledCard>
   );
