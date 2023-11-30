@@ -10,7 +10,7 @@ export const Header = () => {
     <header className="fixed top-0 z-10 h-16 w-full px-4 sm:px-8 bg-default-950/70 backdrop-blur-xl duration-300 ease-in-out transition-all">
       <div className="h-full w-full max-w-7xl mx-auto flex items-center justify-between">
         <Link href={"/"}>
-          <Image alt="logo" src={"mc-logo.svg"} width={40} height={40} />
+          <Image alt="logo" src={"/mc-logo.svg"} width={40} height={40} />
         </Link>
         <Link href={"/designs"}>
           <Button label="View Designs" color="secondary" size="sm" />
