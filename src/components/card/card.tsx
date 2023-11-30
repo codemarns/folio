@@ -24,10 +24,10 @@ export const Card: FC<DesignProps> = (props) => {
       />
       <div className={root.details.base}>
         <Image
-          alt="logo"
-          src={"mc-logo.svg"}
           width={20}
           height={20}
+          alt={floating_img?.alt ?? ""}
+          src={floating_img?.url ?? ""}
           className={root.details.floatingImg.base}
         />
         <div className={root.details.primaryInfo.base}>
